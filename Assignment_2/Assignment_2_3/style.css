@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(92, 90, 90);
+}
+
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    width: 60%; 
+    background-color: rgba(211, 211, 211, 0.425); 
+    margin: auto; 
+    height: 80px; 
+    border-radius: 25px; 
+    padding: 5px;
+    align-items: center;
+}
+
+
+.stickynotesparent{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: [col1] auto [col2] auto  [col3] auto  [col4] auto [end] ;
+    grid-template-rows: [row1] 50% [row2] 50% [end];
+    gap: 30px 30px;
+    justify-content: center;
+
+}
+
+
+.stickynotes{
+    text-align: center;
+    padding: 40px;
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+    font-size: x-large;    
+    border: 0; background-color: red
+
+}
+
+.stickynotes input{
+    border: 0;
+
+}
+
+::placeholder {
+    color: black;
+    opacity: 1; /* Firefox */
+  }
+
+i{
+    color: white;
+}

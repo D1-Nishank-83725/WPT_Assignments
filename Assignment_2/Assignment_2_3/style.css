@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(92, 90, 90);
+    background-image: url(greybg.jpg);
+    background-repeat: no-repeat;
+    
 }
 
 
@@ -29,20 +31,20 @@ body{
 
 
 .stickynotes{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     padding: 40px;
     border: 2px solid white;
     height: 200px;
     width: 200px;
     font-size: x-large;    
-    border: 0; 
     background-color: red;
     box-shadow: -10px 10px 12px #888888;
-
 }
 
 .stickynotes input{
     border: 0;
+    font-size: 18px;
 
 }
 
@@ -54,3 +56,30 @@ body{
 i{
     color: white;
 }
+
+
+.pin{
+    position: absolute;
+    top: 125px;
+    left: 480px;
+}
+
+.pin img{
+    height: 42px;
+    width: 42px;
+}
+
+
+.close{
+    position: absolute;
+    top: 125px;
+    left: 610px;
+    /* left: ; */
+}
+
+.close img{
+    height: 36px;
+    width: 36px;
+}
+
+

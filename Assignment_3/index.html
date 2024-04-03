@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment_3_1</title>
+</head>
+<body>
+    <div class="heading">
+        <pre>
+REGISTRATION FORM
+        </pre>
+    </div>
+    
+    <div class="outerbox">
+
+        <div class="videoplayer">
+            <video class = "video" src="3.mp4" autoplay loop controls></video>
+        </div>
+
+        <div class="registrationform">
+
+            <form action="somejavacodeonserver.jsp" method="post">
+    
+                <table class="registrationformtable ">
+    
+                    <tr>
+                        <td>Name</td>
+                        <td colspan="3"> <input type="text" name="Name" required = "required"></td>
+                    </tr>
+    
+                    <tr>
+                        <td >BirthDate</td>
+                        <td colspan="3"> <input type="date" name="Date" required = "required"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Email</td>
+                        <td colspan="3"> <input type="email" name="Email" required = "required"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Password</td>
+                        <td colspan="3"> <input type="password" name="Password" required = "required"></td>
+                    </tr>
+    
+                    <tr>
+                        <td>Address</td>
+                        <td > 
+                            <Select>
+                                <option value="MH">Maharashtra</option>
+                                <option value="KL">Kerala</option>
+                                <option value="MP">Madhya Pradesh</option>
+                                <option value="MN">Manipur</option>
+                            </Select>
+                            <Select>
+                                <option value="NGP">Nagpur</option>
+                                <option value="BOM">Mumbai</option>
+                                <option value="PUN">Pune</option>
+                                <option value="WDA">Wardha</option>
+                            </Select>
+                            <Select>
+                                <option value="NGP">Nagpur</option>
+                                <option value="BOM">Mumbai</option>
+                                <option value="PUN">Pune</option>
+                                <option value="WDA">Wardha</option>
+                            </Select> 
+
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td>
+                            <pre>State           District  City</pre>
+                        </td>
+    
+                    <tr>
+                        
+                    
+                        
+                    </tr>
+    
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" name="Gender" required = "required">M
+                            <input type="radio" name="Gender" required = "required">F</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Upload Photo</td>
+                        <td>
+                            <input type="file" name="Photo" required = "required">
+                        </td>
+                    </tr>
+    
+    
+                    <tr>
+                        <td>Select your Course</td>
+                        <td>
+                            <Select>
+                                <option>DAC</option>
+                                <option>DBDA</option>
+                                <option>DMC</option>
+                                <option>DITISS</option>
+                                <option>DESD</option>
+                                
+                            </Select>
+                        </td>
+                    </tr>
+                    <tr class="gap">
+                    </tr>
+    
+                </table>
+                <div class="buttons" style="margin-top: 25px;">
+                    <input type="submit" value="Register" style="margin-left: 50px; margin-right: 50px; font-size: 20px; padding-left: 30px; padding-right: 30px;"></td>
+                    <input type="reset" value="Clear" style="font-size: 20px; padding-left: 30px; padding-right: 30px;"></td>
+                </div>
+                
+                
+                
+
+            </form>
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>

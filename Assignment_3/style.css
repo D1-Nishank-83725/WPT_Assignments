@@ -1,0 +1,54 @@
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-family: Helvetica, sans-serif;
+    margin-top: 150px;
+    font-weight: bolder;
+}
+
+
+.outerbox{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.videoplayer{
+    /* border: 1px solid black; */
+    flex-grow: 1;
+    height: 500px;
+}
+
+.registrationform{
+    /* border: 1px solid black; */
+    margin-right: 350px;
+    flex-grow: 1;
+}
+
+.registrationformtable{
+    margin-left: 30px;
+    /* margin-top: 100px; */
+    /* border: 1px solid black; */
+}
+
+tr{
+    /* border: 1px solid black; */
+    height: 20px;
+}
+
+td{
+    /* border: 1px solid black; */
+    /* width: 10px; */
+}
+
+.gap{
+    height: 20px;
+}
+
+.video{
+    /* padding-top: 100px; */
+    padding-left: 350px;
+    margin-left: 10px;
+    height: 340px;    
+    width: 600px;
+}

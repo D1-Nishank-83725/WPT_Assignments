@@ -34,7 +34,9 @@ body{
     height: 200px;
     width: 200px;
     font-size: x-large;    
-    border: 0; background-color: red
+    border: 0; 
+    background-color: red;
+    box-shadow: -10px 10px 12px #888888;
 
 }
 

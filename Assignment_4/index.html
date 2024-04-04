@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <center>
+        <div class="heading">Calculator</div>
+
+        <table> 
+            <tbody>
+                <tr>
+                    <td>Enter Number 1:</td>
+                    <td>
+                        <input type="text" name="Number1" id="num1">
+                    </td>
+                    <td class="errorMessageCell">
+                        <div id="errorMessageForNum1" class="errorMessageForNum"></div>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Enter Number 2:</td>
+                    <td>
+                        <input type="text" name="Number2" id="num2">
+                    </td>
+
+                    <td class="errorMessageCell">
+                        <div id="errorMessageForNum2" class="errorMessageForNum"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Result:</td>
+                    <td>
+                        <div id="resultDiv"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="calcbutton">
+            
+            <input type="button" value="Addition" class="button" onclick="Calculator('add')">
+            <input type="button" value="Subtraction" class="button" onclick="Calculator('sub')">    
+            <input type="button" value="Multiplication" class="button" onclick="Calculator('mul')">
+            <input type="button" value="Division" class="button" onclick="Calculator('div')">
+
+        </div>
+
+    </center>
+
+    
+    <script src="script.min.js"></script>
+
+
+</body>
+</html>

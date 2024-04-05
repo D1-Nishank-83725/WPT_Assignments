@@ -1,0 +1,29 @@
+#carDiv{
+    position: absolute;
+    top: 0;
+    left: -16px;
+}
+
+#road{
+
+    height: 25px;
+    width: 1400px;
+    background-color: black;
+    position: absolute;
+    top: 119px;
+    left: 0;
+}
+
+#tableDiv{
+    position: absolute;
+    top:120px;
+
+}
+
+#explosionDiv{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    bottom: 40px;
+    right: 120px;
+}

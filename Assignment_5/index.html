@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Animation</title>
+</head>
+<body>
+    <div id="carDiv">
+        <img src="images.jpeg" alt="Picture of A Car">
+    </div>
+
+    <div id="road">
+        
+    </div>
+
+    <div id="tableDiv">
+        <br><br><br><br><br>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        X-Axis: 
+                    </td>
+                    <td>
+                        <p id="XAxisReading"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Y-Axis: 
+                    </td>
+                    <td>
+
+                        <p id="YAxisReading"></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <input type="button" value="Start" onclick="Start()">
+                        <input type="button" value="Stop" onclick="Stop()">
+                        <!-- <input type="button" value="Reverse" onclick="reverse()"> -->
+                    </td>
+                 </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div id="explosionDiv" style="visibility: hidden;">
+        <img src="explosion.gif" alt="Gif For Explosion">
+    </div>
+
+    
+    <script>
+        var leftVal = -16;
+        var topVal = 0;
+        var arrayOfQueueNos = new Array();
+
+        function Start(){
+
+            var queueNo = setInterval(KeepMoving, 10);
+            arrayOfQueueNos.push(queueNo);
+            console.log("Queue No " + queueNo + " created");
+
+        }
+
+
+        function Stop(){
+            for (var i = 0; i < arrayOfQueueNos.length; i++) {
+                var queueNoToStop = arrayOfQueueNos[i];
+                clearInterval(queueNoToStop);
+            }
+
+        }
+
+        function KeepMoving(){
+            if (leftVal > 1400) {
+
+                    var refToYAxis = document.getElementById("YAxisReading");
+                    if(topVal < 600){
+                        if (refToCarDiv != null) {
+                            
+                            refToCarDiv.style.transform='rotate(30deg)';
+                            topVal = topVal + 1;
+                            refToCarDiv.style.top = topVal + "px";
+                            refToYAxis.innerText = topVal + "px";
+                            
+                        }
+                        
+
+                        if(topVal >= 100)
+                        {
+                            refToCarDiv.style.transform='rotate(60deg)';
+
+                        }
+
+
+                        if(topVal >= 200)
+                        {
+                            refToCarDiv.style.transform='rotate(120deg)';
+
+                        }
+
+
+                        if(topVal >= 300)
+                        {
+                            refToCarDiv.style.transform='rotate(175deg)';
+
+                        }
+
+
+                        if(topVal >= 400)
+                        {
+                            refToCarDiv.style.transform='rotate(250deg)';
+
+                        }
+
+
+                        if(topVal >= 500)
+                        {
+                            refToCarDiv.style.transform='rotate(300deg)';
+
+                        }
+
+
+
+                        if(topVal >= 600)
+                        {
+                            refToCarDiv.style.transform='rotate(0deg)';
+
+                        }
+
+                        
+                    }
+                }
+            
+
+            else{
+                refToCarDiv = document.getElementById("carDiv");
+
+                var refToXAxis = document.getElementById("XAxisReading");
+                
+                if (refToCarDiv != null) {
+                    
+                    leftVal = leftVal + 1;
+                    refToCarDiv.style.left = leftVal + "px";
+                    refToXAxis.innerText = leftVal + "px";
+
+
+                }
+            }
+
+            if (leftVal == 1401 && topVal == 600) {
+                refToExplosionDiv = document.getElementById("explosionDiv");
+                refToExplosionDiv.style.visibility = "visible";
+                refToCarDiv.inner
+            }
+        }
+
+
+
+    </script>
+</body>
+</html>
